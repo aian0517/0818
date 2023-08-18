@@ -218,13 +218,13 @@ header .carousel{
     background-size: cover;
 }
 .body1-box>li:nth-child(3n-2){
-    background-image: url(/image/body1-img1.jpg);
+    background-image: url(./image/body1-img1.jpg);
 }
 .body1-box>li:nth-child(3n-1){
-    background-image: url(/image/body1-img2.jpg);
+    background-image: url(./image/body1-img2.jpg);
 }
 .body1-box>li:nth-child(3n){
-    background-image: url(/image/body1-img3.jpg);
+    background-image: url(./image/body1-img3.jpg);
 }
 
 
@@ -249,20 +249,20 @@ header .carousel{
 
 .body2-click{
     border-top-left-radius: 50%;
-    background-image: url(/image/body2-1.jpg);  
+    background-image: url(./image/body2-1.jpg);  
 }
 .body2-click2{
     border-top-right-radius: 50%;
-    background-image: url(/image/body2-2.jpg);    
+    background-image: url(./image/body2-2.jpg);    
 }
 .body2-click3{
     border-bottom-left-radius: 50%;
-    background-image: url(/image/body2-3.jpg);    
+    background-image: url(./image/body2-3.jpg);    
 
 }
 .body2-click4{
     border-bottom-right-radius: 50%;
-    background-image: url(/image/body2-4.jpg);    
+    background-image: url(./image/body2-4.jpg);    
 }
 .body2-card{
     width: 65%;
@@ -320,7 +320,7 @@ header .carousel{
 #body3{
     width: 100%;
     min-height: 100vh;
-    background: var(--bg--sun) url(/image/body3-bg.png) no-repeat center / cover fixed;
+    background: var(--bg--sun) url(./image/body3-bg.png) no-repeat center / cover fixed;
 }
 .body3-swp .swiper-slide{
     width: 100%;
@@ -375,7 +375,7 @@ header .carousel{
 /*  */
 
 #body5{
-    background: url(/image/test_img15.jpg) no-repeat center/cover fixed;
+    background: url(./image/test_img15.jpg) no-repeat center/cover fixed;
     /* backdrop-filter: blur(15px); */
 }
 
