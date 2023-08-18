@@ -1,0 +1,33 @@
+@media (max-width:1080px) {
+    .title{
+        font-size: 2.8em;
+    }
+    .title-col{
+        font-size: 1.2em;
+    }
+    .head-title{
+        font-size: 4.5rem;
+    }
+    .head-subtitle{
+        font-size: 1.3rem;
+    }
+    .header-text{
+        padding-top: 65px;
+    }
+    .head-swp{
+        width: 350px;
+    }
+    .body2-card{
+        width: 90%;
+        height: 650px;
+    }
+    .body2-card-title{
+        font-size: 1.5rem;
+    }
+    .body2-card-text{
+        font-size: 1.2rem;
+    }
+    .body3-card{
+        width: 80%;
+    }
+}

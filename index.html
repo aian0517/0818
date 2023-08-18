@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT金融反詐所</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="#top" class="navbar-brand fs-3 df jcc aic m-0 m-auto">
+                <img src="./image/商標.png" alt="" style="width: 50px;">
+                <h2 class="m-0 ms-2">NFT金融反詐所</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#body1" class="nav-link nav_link">金融詐騙</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#body2" class="nav-link nav_link">避免方法</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#body3" class="nav-link nav_link">詐騙手法</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#body4" class="nav-link nav_link">統計資料</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row m-lg-0 jcc">
+                    <li class="nav-item">
+                        <a href="#body5" class="nav-link">
+                            <img src="./image/nav-icon.png" alt="" class="nav-icon" style="width: 18px;">
+                        </a>
+                    </li>
+                    <li class="nav-item my-auto" onclick="window.open('index.html','_blank','top=200,left=100,width=500,height=700')">
+                        <a href="javascript://" class="nav-link">
+                            <img src="./image/nav-icon2.png" alt="" class="nav-icon">
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <img src="./image/nav-icon3.png" alt="" class="nav-icon sun" data-bs-toggle="modal" data-bs-target="#bg-color">
+                    </li>
+                    <li class="nav-link">
+                        <img src="./image/nav-icon4.png" alt="" class="nav-icon mx-2" data-bs-toggle="modal" data-bs-target="#login">
+                    </li>
+                </ul>
+                <form class="df jcc aic mx-3">
+                    <input type="search" placeholder="本站熱搜" class="form-control nav-search">
+                    <img src="./image/nav-icon-seach.png" alt="" class="nav-icon mx-2" style="width: 20px;transform: rotate(270deg);"  data-bs-toggle="modal" data-bs-target="#nono">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="carousel slide carousel-fade" id="header-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/header-1.png" alt="" class="header-img">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/header-2.png" alt="" class="header-img">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/header-3.png" alt="" class="header-img">
+                </div>
+            </div>
+        </div>
+        <div class="container header-text">
+            <div class="row text-light jcc aic">
+                <div class="col-lg-6 col-12">
+                    <h1 class="head-title text-center mb-3" data-aos="fade-right" data-aos-duration="1200">別讓<span
+                            class="color2">金融詐騙</span>找上你</h1>
+                    <h6 class="head-subtitle" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="700">
+                        還在擔心自己的辛苦錢財<span class="head-subtext">被騙走</span>嗎? 還在擔心網路上散播的<span
+                            class="head-subtext">消息真假</span>嗎? 帶你來看近期的<span class="head-subtext">詐騙手法</span>以及教你如何<span
+                            class="color2">避免</span>輕易地上當。</h6>
+                </div>
+                <div class="col-lg-6 col-12 df jcc aic">
+                    <div class="swiper mySwiper head-swp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/image/head-swp-img.jpg" alt="" class="head-swp-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/head-swp-img2.jpg" alt="" class="head-swp-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/head-swp-img3.jpg" alt="" class="head-swp-img">
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <img src="./image/head-swp-img4.jpg" alt="" class="head-swp-img">
+                            </div> -->
+                        </div>
+                        <div class="swiper-pagination head-swp-doot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="body1" class="min-vh-100  bg">
+        <div class="container my-5 py-5">
+            <h1 class="title" data-aos="fade-right" data-aos-duration="1500">甚麼是<span class="title-col">金融詐騙?</span>
+            </h1>
+            <h4 class="body1-text color-sun">隨著現代科技的進步造就社會繁榮，⺠眾⽣活品質也開始提升， 尤其在網路技術⽇新⽉異的推波助瀾下，更是以無時差、無國界的形 式傳播資訊。 雖然網路讓⺠眾⽣活更加便利，
+                卻也被有⼼⼈⼠利⽤成為犯罪途徑。
+                近來發⽣中央研究院學術界⼈⼠及影星等重⼤詐騙案件， 便是因為詐騙集團利⽤網路或其他途徑不法取得⺠眾個資後， 利⽤假檢警及操作ATM解除分期付款等⽅式進⾏詐騙。 此外也有藉由網路拍賣購物等模式騙取⺠眾財產，
+                ⺠眾因⽽在不知情的情況下受騙，詐騙⼿法可說是層出不窮。
+            </h4>
+        </div>
+        <ul class="body1-box my-5">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section id="body2" class=" bg">
+        <div class="container my-5 py-5">
+            <h1 class="title" data-aos="fade-right" data-aos-duration="1200">如何<span class="title-col">避免</span></h1>
+            <div class="row my-5 py-5 jcc aic">
+                <div class="col-lg-5 col-12 mb-lg-0 mb-5">
+                    <div class="body2-run">
+                        <div class="df text-light fw-bold">
+                            <div class="body2-click aa active" data-aos="fade-down-right" data-aos-duration="500"
+                                data-aos-delay="300">假冒公務人員</div>
+                            <div class="body2-click2 aa" data-aos="fade-down-left" data-aos-duration="500"
+                                data-aos-delay="300">假冒銀行人員</div>
+                        </div>
+                        <div class="df text-light fw-bold">
+                            <div class="body2-click3  aa" data-aos="fade-up-right" data-aos-duration="500"
+                                data-aos-delay="300">假冒拍賣賣家</div>
+                            <div class="body2-click4  aa" data-aos="fade-up-left" data-aos-duration="500"
+                                data-aos-delay="300">假冒朋友借錢</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 df jcc aic">
+                    <div class="card body2-card p-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
+                        <img src="./image/body2-1.jpg" alt="" class="card-img-top body2-card-img">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 class="text-center mb-lg-4 mb-3 body2-card-title fw-bold">假冒機構公務員或警察機構詐財手法及預防策略</h2>
+                            </div>
+                            <div class="card-text color ">
+                                <h5 class="body2-card-text">
+                                    法院或警察機關辦案，不會收取當事人現金、亦不會要求匯款；法院或警察機關不會監管當事人帳戶；法院不會用傳真方式，將傳喚書送給當事人，一定會以掛號信函送達；公家機關絕對不會以電話、電話錄音或以簡訊通知用戶轉帳，或要打電話與某單位聯繫。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="body3">
+        <div class="container py-5">
+            <h1 class="title">詐騙 <span class="title-col">手法</span></h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper mySwiper body3-swp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="body3-card">
+                                    <img src="./image/body3-card-img/1.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">電話詐欺</h2>
+                                        <p class="my-4 fs-5">主要係指犯罪者利⽤電話連繫被害⼈，謊稱被害⼈已中⼤獎或是藉由恐嚇等⽅式詐騙被害⼈</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/2.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">網路詐欺</h2>
+                                        <p class="my-4 fs-5">由於網路資訊發達，許多⼈陸續開始進⾏網路購物，因此犯罪者便利⽤這⼀點經營假網拍騙取⺠眾財產</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/3.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">價冒名義</h2>
+                                        <p class="my-4 fs-5">犯罪者假冒檢察官、警察、或公務機關等⾝份威脅被害⼈，讓被害⼈不敢反抗</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/4.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">詐騙款項</h2>
+                                        <p class="my-4 fs-5">犯罪者及被害⼈彼此認識之下，犯罪者向被害⼈借錢，之後被害⼈要求還錢時屢次找藉⼝拖延，甚⾄不予回應</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/5.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">偽稱買賣</h2>
+                                        <p class="my-4 fs-5">犯罪者利⽤電視、雜誌等媒體刊登不實廣告謊稱某物品具有良好功效吸引許多消費者訂購，進⽽使消費者受騙</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/6.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">拒付款項(賴帳)</h2>
+                                        <p class="my-4 fs-5">犯罪者與被害⼈簽約或訂貨後，當被害⼈完成進度並向犯罪者要求⽀付現⾦時，犯罪者卻找理由拒付該款項</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/7.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">投資詐欺</h2>
+                                        <p class="my-4 fs-5">犯罪者利⽤⺠眾想藉由投資股票或基⾦等⽅式快速獲利並致富的⼼理巧妙設計出⼀連串投資上的騙局</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/8.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">虛設⾏號</h2>
+                                        <p class="my-4 fs-5">犯罪者設立假公司或統⼀發票營業⼈⾝份，讓被害⼈在不知情的狀況下與他們做交易往來</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=" body3-card">
+                                    <img src="./image/body3-card-img/9.png" alt="" class="card3-img">
+                                    <div class="card3-body">
+                                        <h2 class="text-center my-3">票據(空頭)</h2>
+                                        <p class="my-4 fs-5">犯罪者與被害⼈有簽約或訂貨，並在被害⼈完成進度後開立⽀票給被害⼈，但實際上該⽀票為空頭⽀票(亦即俗稱的「芭樂票」)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination body3-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="body4" class="bg">
+        <div class="container py-5 my-5">
+            <h1 class="title">國民APP whoscall <span class="title-col">2021年度報告</span></h1>
+            <div class="row py-5 my-5">
+                <div class="col-lg-6 col-12 mb-lg-0 mb-3 df jcc aic ">
+                    <h3 class="body4-text">如圖顯示，重要商用電話占比為83.5通，為最多數量，推銷電話為40.4通，為第二多數量，最後大家最不想接到的詐騙電話為4.4通，為最少的通數。</h3>
+                </div>
+                <div class="col-lg-6 col-12 df jcc aic">
+                    <div id="mychart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="body5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-7 col-12 mb-lg-0 mb-3">
+                    <div class="message-box color">
+                        <form onsubmit="message()">
+                            <h2 class="fw-bold">留言區</h2>
+                            <div class="my-5 ">
+                                <label for="" class="fs-4 fw-bold">姓名</label>
+                                <input type="text" class="message-input message-name" placeholder="name" required>
+                            </div>
+                            <div class="my-5">
+                                <label for="" class="fs-4 fw-bold">信箱</label>
+                                <input type="email" class="message-input message-email" placeholder="email" required>
+                            </div>
+                            <div class="my-5">
+                                <label for="" class="fs-4 fw-bold">留言</label>
+                                <input type="text" class="message-input  message-input" placeholder="message" required>
+                            </div>
+                            <div class="df justify-content-around aic my-5">
+                                <button type="reset" class="btn message-btn message-res">重設</button>
+                                <button type="submit" class="btn message-btn message-sub">送出</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <div class="message-content ">
+                        <h2 class="color fw-bold">留言板</h2>
+                        <div class="message-wire mb-4"></div>
+                        <div class="message">
+                            <!-- <div class="message-1 mb-2">
+                                <div class="df justify-content-between mb-2">
+                                    <h5 class="mb-0">菜餅</h5>
+                                    <p class="fs-6 mb-0">qaz@013448702@gmail.com</p>
+                                </div>
+                                <p class="message-1-wire fs-4">
+                                    您好我有問題~
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container py-3">
+            <div class="row text-light">
+                <div class="col-lg-4 col-12 mb-lg-0 mb-2">
+                    <h2>聯絡資訊</h2>
+                    <p class="fs-5">電話 : (02)-1234-5678</p>
+                    <p class="fs-5">地址 : 新北市三重區中正北路</p>
+                    <p class="fs-5">信箱 : B034@gmail.com</p>
+                </div>
+                <div class="col-lg-4 col-12 mb-lg-0 mb-2 df jcc align-items-end fs-5">
+                    &copy; 2023 / 08 / 16
+                </div>
+                <div class="col-lg-4 col-12 mb-lg-0 mb-2 df justify-content-around aic flex-column">
+                    <h2>關注我們</h2>
+                    <div class="df">
+                        <img src="./image/fb.png" alt="" class="footer-icon" data-bs-toggle="modal" data-bs-target="#nono">
+                        <img src="./image/ig.png" alt="" class="footer-icon" data-bs-toggle="modal" data-bs-target="#nono">
+                        <img src="./image/footer-icon.png" alt="" class="footer-icon" data-bs-toggle="modal" data-bs-target="#nono">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="nono">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h2 class="fw-bold text-dark">系統通知</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body fs-4 text-dark">
+                    很抱歉，由於您尚未連接網路，請檢查網路是否有連線。
+                </div>
+                <div class="modal-footer">
+                    <button class="btn " data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-dark fw-bold">會員登入</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="my-5">
+                        <label for="" class="fs-4 color">帳號</label>
+                        <input type="text" class="message-input">
+                    </div>
+                    <div class="my-5">
+                        <label for="" class="fs-4 color">密碼</label>
+                        <input type="password" class="message-input">
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn " data-bs-toggle="modal" data-bs-target="#login-2">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login-2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-dark fw-bold">登入成功</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body df jcc aic">
+                    <img src="./image/登入成功.png" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn " data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bg-color">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-dark fw-bold">顏色選擇</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body df jcc aic fdc">
+                    <h4>請選擇顏色</h4>
+                    <div class="df jcc aic fdc">
+                        <div class="my-3">
+                            <label for="" class="fs-5">顏色一</label>
+                            <input type="color" class="form-control form-control-color form-color" value="#2894FF">
+                        </div>
+                        <div class="my-3">
+                            <label for="" class="fs-5">顏色二</label>
+                            <input type="color" class="form-control form-control-color form-color2" value="#f78614">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn color-btn" data-bs-dismiss="modal">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="top" href="#top">
+        <img src="./image/箭頭.png" alt="">
+    </a>
+    <div class="robot">
+        <img src="./image/line.png" alt="">
+    </div>
+    <div class="robot-content text-light">
+        <div class="robot-header">
+            <h3 class="m-0">聊天機器人</h3>
+            <button class="btn-close robot-xx"></button>
+        </div>
+        <div class="robot-body">
+            <span class="robot-1">
+                您好，我是本網站的聊天機器人，很高興為您服務，有任何問題都可以向我詢問唷!
+            </span>
+        </div>
+        <div class="robot-footer">
+            <div class="df mb-3 justify-content-around aic w-100">
+                <a href="#body1" class="robot-a">金融詐騙</a>
+                <a href="#body2" class="robot-a">如何避免</a>
+                <a href="#body3" class="robot-a">詐騙手法</a>
+            </div>
+            <div class="df">
+                <input type="text" placeholder="請輸入內容" class="robot-input" list="robot-option">
+                <datalist id="robot-option">
+                    <option value="詐騙資訊"></option>
+                    <option value="反詐騙"></option>
+                    <option value="詐騙防範方法"></option>
+                </datalist>
+                <img src="./image/robot.png" alt="" class="robot-submit">
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+
+</html>
