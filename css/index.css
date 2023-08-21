@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: 'ccc';
-    src: url('/NotoSans-Light.ttf') format('opentype');
+    src: url(../NotoSans-Light.ttf) format('opentype');
 }
 body{
     font-family: 'ccc';
