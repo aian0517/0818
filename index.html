@@ -52,15 +52,20 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <img src="./image/nav-icon3.png" alt="" class="nav-icon sun" data-bs-toggle="modal" data-bs-target="#bg-color">
+                        <img src="./image/nav-icon3.png" alt="" class="nav-icon sun">
                     </li>
                     <li class="nav-link">
                         <img src="./image/nav-icon4.png" alt="" class="nav-icon mx-2" data-bs-toggle="modal" data-bs-target="#login">
                     </li>
                 </ul>
                 <form class="df jcc aic mx-3">
-                    <input type="search" placeholder="本站熱搜" class="form-control nav-search">
+                    <input type="search" placeholder="本站熱搜" class="form-control nav-search" list="search">
                     <img src="./image/nav-icon-seach.png" alt="" class="nav-icon mx-2" style="width: 20px;transform: rotate(270deg);"  data-bs-toggle="modal" data-bs-target="#nono">
+                    <datalist id="search">
+                        <option value="詐騙"></option>
+                        <option value="詐騙統計"></option>
+                        <option value="詐騙手法"></option>
+                    </datalist>
                 </form>
             </div>
         </div>
@@ -324,6 +329,7 @@
         </div>
     </section>
     <footer id="footer">
+        <div class="footer-runbg"></div>
         <div class="container py-3">
             <div class="row text-light">
                 <div class="col-lg-4 col-12 mb-lg-0 mb-2">
@@ -382,7 +388,8 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button class="btn " data-bs-toggle="modal" data-bs-target="#login-2">登入</button>
+                    <button class="btn " data-bs-toggle="modal" data-bs-target="#nono" >註冊</button>
+                    <button class="btn " data-bs-toggle="modal" data-bs-target="#login-2" style="background-color: var(--bg--color2);">登入</button>
                 </div>
             </div>
         </div>

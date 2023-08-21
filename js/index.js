@@ -9,7 +9,7 @@ var head_swp = new Swiper(".head-swp", {
     // shadowScale: 0.94,
   },
   autoplay: {
-    delay: 2000,
+    delay: 4800,
     disableOnInteraction: false,
   },
   pagination: {
@@ -24,14 +24,14 @@ var body3_swp = new Swiper(".body3-swp",{
     centeredSlides:true,
     coverflowEffect:{
       rotate:0,
-      stretch:80,
-      depth:200,
+      stretch:100,
+      depth:210,
       modifier:1,
       slidesShadows:false,
     },
     slidesPerView:3,
     autoplay:{
-      delay:2000,
+      delay:2500,
       disableOnInteraction:false,
     },
     speed:1000,
@@ -54,18 +54,18 @@ var body3_swp = new Swiper(".body3-swp",{
 
 
 // nav
-var y = $(window).scrollTop()
-$(window).scroll(()=>{
-  var win_y = $(window).scrollTop()
-  if($(window).innerWidth() < 1080){
-    if(win_y > y){
-      $('nav').css('top','-100px')
-    }else{
-      $('nav').css('top','0')
-    }
-  }
-  y = win_y
-})
+// var y = $(window).scrollTop()
+// $(window).scroll(()=>{
+//   var win_y = $(window).scrollTop()
+//   if($(window).innerWidth() < 1080){
+//     if(win_y > y){
+//       $('nav').css('top','-100px')
+//     }else{
+//       $('nav').css('top','0')
+//     }
+//   }
+//   y = win_y
+// })
 
 // 如何避免
 $('.aa').click(function(){
@@ -184,30 +184,34 @@ Highcharts.chart('mychart',{
 
 
 // sun
-// var sun = 1
-// $('.sun').click(()=>{
-//    if(sun === 1){
-//     $('body').css('--bg--color','#f78614')
-//     $('body').css('--bg--color2','#2894FF')
-//     $('body').css('--bg--sun','#5d5d5d')
-//     $('body').css('--color--sun','#fff')
-//     sun = 0
-//   }else if(sun === 0){
-//     $('body').css('--bg--color','#2894FF')
-//     $('body').css('--bg--color2','#f78614')
-//     $('body').css('--bg--sun','#fff')
-//     $('body').css('--color--sun','#000')
-//     sun = 1
-//   }
-// })
-
-
-$('.color-btn').click(()=>{
-  var form_color = $('.form-color').val()
-  var form_color2 =$('.form-color2').val()
-  $('body').css('--bg--color',form_color)
-  $('body').css('--bg--color2',form_color2)
+var sun = 1
+$('.sun').click(()=>{
+   if(sun === 1){
+    $('body').css('--bg--color','#f78614')
+    $('body').css('--bg--color2','#2894FF')
+    $('body').css('--bg--sun','#5d5d5d')
+    $('body').css('--color--sun','#fff')
+    $('.sun').attr('src','./image/nav-icon3-moon.png')
+    $('.footer-runbg').css('background-image','url(../image/footer-bg2.png)')
+    sun = 0
+  }else if(sun === 0){
+    $('body').css('--bg--color','#2894FF')
+    $('body').css('--bg--color2','#f78614')
+    $('body').css('--bg--sun','#fff')
+    $('body').css('--color--sun','#000')
+    $('.sun').attr('src','./image/nav-icon3.png')
+    $('.footer-runbg').css('background-image','url(../image/footer-bg.png)')
+    sun = 1
+  }
 })
+
+
+// $('.color-btn').click(()=>{
+//   var form_color = $('.form-color').val()
+//   var form_color2 =$('.form-color2').val()
+//   $('body').css('--bg--color',form_color)
+//   $('body').css('--bg--color2',form_color2)
+// })
 
 
 
@@ -245,9 +249,14 @@ $('.robot-submit').click(()=>{
       <span class="robot-2">${$('.robot-input').val()}</span>
     </p>
     `)
+    var ans = '您好，我是本網站的聊天機器人，很高興為您服務，請留下您的聯絡資訊，或是來電(02)-1234-5678由專人客服人員為您服務。'
+    x = Object.keys(ANS).filter(k => $('.robot-input').val().includes(k)).at(-1)
+    if(x){
+      ans = ANS[x]
+    }
     setTimeout(() => {
       $('.robot-body').append(`
-    <span class="robot-1">您好，我是本網站的聊天機器人，很高興為您服務，請留下您的聯絡資訊，或是來電(02)-1234-5678由專人客服人員為您服務。!</span>
+    <span class="robot-1">${ans}</span>
     `)
       $('.robot-body').animate({scrollTop:$('.robot-body')[0].scrollHeight},'slow')
     }, 1000);
@@ -261,3 +270,8 @@ $('.robot-input').keypress((e)=>{
     }
 })
 
+$('.robot-a').click(function(){
+  var text = $(this).text()
+  $('.robot-input').val(text)
+  $('.robot-submit').click()
+})
