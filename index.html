@@ -38,6 +38,9 @@
                         <a href="#body3" class="nav-link nav_link">詐騙手法</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#shop" class="nav-link nav_link">課程訂購</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#body4" class="nav-link nav_link">統計資料</a>
                     </li>
                 </ul>
@@ -270,6 +273,48 @@
             </div>
         </div>
     </section>
+    <section id="shop">
+        <div class="container py-5">
+            <h1 class="title pb-5">課程訂購</h1>
+            <div class="row gx-5">
+                <div class="col-lg-9 col-12 mb-3">
+                    <div class="swiper mySwiper shop-swiper">
+                        <div class="swiper-wrapper shop-wrapper">
+                            <!-- <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img src="./image/shop-1.png" alt="" class="card-img-top shop-img">
+                                    <div class="card-body df justify-content-around flex-column">
+                                        <div class="card-title shop-title">
+                                            金融安全宣導課程
+                                        </div>
+                                        <div class="card-text shop-text">
+                                            <p class="mb-2">本課程將向大眾講解有關金融詐騙相關資訊，歡迎大眾蒞臨參加。</p>
+                                            <p class="color2 text-center fw-bold fs-5">NT$免費參與</p>
+                                        </div>
+                                        <div class="shop-control">
+                                            <button class="shop-btn-reduce">-</button>
+                                            <input type="text" class="shop-input" value="0">
+                                            <button class="shop-btn-add">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="swiper-pagination shop-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="shop-cart h-100 df jcc  flex-column">
+                        <h2 class="my-3 text-center">購物車</h2>
+                        <p class="text-center fs-5">請點選左邊，購買的課程</p>
+                        <div class="shop-cart-content"></div>
+                        <h2 class="my-3 text-center">總共$<span class="shop-total-price">0</span>元</h2>
+                        <button class="shop-submit">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="body4" class="bg">
         <div class="container py-5 my-5">
             <h1 class="title">國民APP whoscall <span class="title-col">2021年度報告</span></h1>
@@ -300,7 +345,7 @@
                             </div>
                             <div class="my-5">
                                 <label for="" class="fs-4 fw-bold">留言</label>
-                                <input type="text" class="message-input  message-input" placeholder="message" required>
+                                <input type="text" class="message-input  message-mess" placeholder="message" required>
                             </div>
                             <div class="df justify-content-around aic my-5">
                                 <button type="reset" class="btn message-btn message-res">重設</button>
@@ -313,8 +358,43 @@
                     <div class="message-content ">
                         <h2 class="color fw-bold">留言板</h2>
                         <div class="message-wire mb-4"></div>
-                        <div class="message">
-                            <!-- <div class="message-1 mb-2">
+                        <div class="swiper mySwiper mes">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide df jcc aic">
+                                    <div class="mes-content">
+                                        <h2 class="mb-2 fw-bold">菜餅</h2>
+                                        <p class="fs-6 mb-1 text-end fw-bold">qaz@013448702@gmail.com</p>
+                                        <div class="message-wire"></div>
+                                        <p class="fs-5 mes-text">您好我有問題~有關於詐騙相關事情，雖然您的網站製作了許多關於詐騙宣導的訊息，
+                                            但是當詐騙來的時候，有先人會很緊張得忘我，或著是老一輩的長輩，由於不常看網站的關係，
+                                            很容易沒有反詐騙的觀念，是否有解決的問題
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide df jcc aic">
+                                    <div class="mes-content">
+                                            <h3 class="mb-2 fw-bold">公子(達達利鴨)</h3>
+                                            <p class="fs-6 mb-1 text-end fw-bold">csgh053@gmail.com</p>
+                                            <div class="message-wire"></div>
+                                            <p class="fs-5 mes-text">我想找人打架~ <br>
+                                                地址:新北市三重區中正北路
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide df jcc aic">
+                                    <div class="mes-content">
+                                        <h3 class="mb-2 fw-bold">匿名人士</h3>
+                                        <p class="fs-6 mb-1 text-end fw-bold">def5t@gmail.com</p>
+                                        <div class="message-wire"></div>
+                                        <p class="fs-5 mes-text">其實我不知道要說啥</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- <div class="message">
+                            <div class="message-1 mb-2">
                                 <div class="df justify-content-between mb-2">
                                     <h5 class="mb-0">菜餅</h5>
                                     <p class="fs-6 mb-0">qaz@013448702@gmail.com</p>
@@ -322,8 +402,8 @@
                                 <p class="message-1-wire fs-4">
                                     您好我有問題~
                                 </p>
-                            </div> -->
-                        </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -407,6 +487,58 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn " data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shop_submit">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="fw-bold m-0 me-2">訂購資訊</h2>
+                    <img src="./image/shop-icon.png" alt="">
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="my-3 df">
+                            <label for="" class="fs-5 color fw-bold">姓　　名：</label>
+                            <input type="text" placeholder="name" class="shop-submit-input">
+                        </div>
+                        <div class="my-3">
+                            <label for="" class="fs-5 color fw-bold">電子郵件：</label>
+                            <input type="email" placeholder="email" class="shop-submit-input">
+                        </div>
+                        <div class="my-3">
+                            <label for="" class="fs-5 color fw-bold">連絡電話：</label>
+                            <input type="text" placeholder="phone" class="shop-submit-input">
+                        </div>
+                        <div class="my-3">
+                            <label for="" class="fs-5 color fw-bold">送貨地址：</label>
+                            <input type="text" placeholder="address" class="shop-submit-input">
+                        </div>
+                    </form>
+                    <p class="m-0 mt-5 fs-5">送出之前，記得要<span class="color2 fw-bold">檢查資料是否有填錯喔~</span>，如有填錯請打給客服0800-1250-3520詢問，將有專人為您服務(*^▽^*)</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn shop-submit-submit" data-bs-toggle="modal" data-bs-target="#shop_submit2">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shop_submit2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="fw-bold m-0">訂單送出成功</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-4 mb-5">感謝您的訂購,訂單將在確認後<span class="color2 fw-bold">發通知告知您有關課程的時間與地點</span>，要記得來參加喔~，當天也會以<span class="color2 fw-bold">電話通知</span>您。</p>
+                    <h5>感謝您蒞臨本網站，期待與您再相會<span style="color: rgb(241, 88, 46);">❤</span></h5>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-dismiss="modal">關閉</button>
                 </div>
             </div>
         </div>

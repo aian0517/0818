@@ -30,4 +30,8 @@
     .body3-card{
         width: 80%;
     }
+    .shop-swiper .card{
+        width: 70%;
+        margin: auto;
+   }
 }
