@@ -37,6 +37,7 @@ var body3_swp = new Swiper(".body3-swp",{
     speed:1000,
     pagination:{
       el:".body3-pagination",
+      // clickable:true,
     },
     breakpoints:{
       0:{
@@ -246,7 +247,7 @@ $.each(shop_data,function(index,value){
             </div>
             <div class="shop-control">
                 <button class="shop-btn-reduce" onclick= add(-1,${index})>-</button>
-                <input type="text" class="shop-input" value="${value.amount}">
+                <input type="text" class="shop-input" value="${value.amount}" disabled>
                 <button class="shop-btn-add" onclick= add(1,${index})>+</button>
             </div>
         </div>
@@ -259,21 +260,25 @@ function add(n,index){
   shop_data[index].amount = Math.max(0,shop_data[index].amount + n)
   $('.shop-input').eq(index).val(shop_data[index].amount)
   ccc()
+  $('.shop-cart-data').each(function() {
+    var elementId = $(this).attr('id');
+    if(elementId == index) {
+        $(this).addClass('active');
+    }
+});
 }
-$('.shop-input').on('input',function(){
-  var shop_input_index = $(this).index('.shop-input')
-  var shop_input_val = $(this).val()
-  shop_data[shop_input_index].amount = shop_input_val
-  ccc()
-})
-$('.shop-input').on('blur',function(){
-  var shop_input_index = $(this).index('.shop-input')
-  var shop_input_val = $(this).val()
-  if($(this).val()===''){
-    $(this).val(0)
-    ccc()
-  }
-})
+// $('.shop-input').on('input',function(){
+//   var shop_input_index = $(this).index('.shop-input')
+//   var shop_input_val = $(this).val()
+//   shop_data[shop_input_index].amount = shop_input_val
+//   ccc()
+// })
+// $('.shop-input').on('blur',function(){
+//   if($(this).val()===''){
+//     $(this).val(0)
+//     ccc()
+//   }
+// })
 function ccc(){
   shop_price = 0
   $('.shop-cart-content').html('')
@@ -281,10 +286,10 @@ function ccc(){
     if(item.amount != 0){
       shop_price += item.price * item.amount
       $('.shop-cart-content').prepend(`
-      <div class="shop-cart-data active">
+      <div class="shop-cart-data" id="${ind}">
         <h5 class="color fw-bold">${item.title}</h5>
         <div class="df justify-content-between">
-            <p>${item.amount}堂</p>
+            <p>${item.amount}堂</p> 
             <p>NT$${item.price_text}/一天</p>
         </div>
       </div>

@@ -6,9 +6,12 @@
     font-family: 'ccc';
     src: url(../NotoSans-Light.ttf) format('opentype');
 }
+html{
+    scroll-padding: 15px;
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'ccc';
-    scroll-padding: 20vh;
     overflow-x: hidden;
     background-color: var(--bg--sun);
 }
@@ -423,9 +426,7 @@ header .carousel{
     color: #fff;
     font-size: 1.2em;
 }
-/* .shop-swiper .card:hover{
-    box-shadow: 0 0 20px var(--bg--color);
-} */
+
 
 .shop-cart{
     padding: 10px 5px;
@@ -464,7 +465,7 @@ header .carousel{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.3);
+        transform: scale(1.05);
     }
 }
 
